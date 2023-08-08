@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okaa Bot</title>
-    <link rel="stylesheet" href="home/styles.css">
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Okaa Bot</title>
+		<link rel="stylesheet" href="home/styles.css" />
+	</head>
 
-<body>
-    <header>
-        <h1>Bienvenido a Okaa</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="comandos/comandos.html">Comandos</a></li>
-            <li><a href="contacto/contacto.html">Contacto</a></li>
-            <li><a href="terminos/terminos.html">Términos de servicio</a></li>
-            <li><a href="terminos/politicas.html">Politicas de privacidad</a> </li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Pagina Principal</h2>
-        <p>¡Hola mundo! Esta es Okaa.</p>
-    </main>
-    <footer>
-        <p>Copyright © 2023 - Okaa</p>
-    </footer>
+	<body>
+		<header>
+			<h1>Bienvenido a Okaa</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="comandos/comandos.html">Comandos</a></li>
+				<li><a href="contacto/contacto.html">Contacto</a></li>
+				<li><a href="terminos/terminos.html">ToS</a></li>
+				<li><a href="terminos/politicas.html">Politicas de privacidad</a></li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Okaa Bot</h2>
+			<p>
+				¡Hola! Esta es Okaa una bot para tu servidor de Discord multifuncional
+				con muchos comandos y subcomandos para ayudar a incentivar la actividad
+				en tu servidor de discord.
+			</p>
 
-    <script>
-        // Obtiene la URL actual de la página
-        var currentURL = window.location.href;
-        // Obtén todos los elementos de enlace dentro del menú de navegación
-        var links = document.querySelectorAll("nav li a");
-        // Itera a través de los enlaces para verificar si su href coincide con la URL actual
-        for (var i = 0; i < links.length; i++) {
-            if (links[i].href === currentURL) {
-                // Si el href coincide, agrega la clase "active" al botón
-                links[i].parentNode.classList.add("active");
-            }
-        }
-    </script>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1089931393733251132&permissions=3276799&scope=applications.commands%20bot" class="invite-button">Invita a Okaa a tu servidor</a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=940353731172655164&permissions=3276799&scope=bot" class="invite-button">Invita a Okaa Music</a>
+            <a href="https://discord.gg/2ZKdT6SRsZ" class="invite-button">Servidor de Discord</a>
 
-</body>
+		</main>
+		<footer>
+			<p>Copyright © 2023 - Okaa</p>
+		</footer>
+
+		<script>
+			// Obtiene la URL actual de la página
+			var currentURL = window.location.href;
+			// Obtén todos los elementos de enlace dentro del menú de navegación
+			var links = document.querySelectorAll("nav li a");
+			// Itera a través de los enlaces para verificar si su href coincide con la URL actual
+			for (var i = 0; i < links.length; i++) {
+				if (links[i].href === currentURL) {
+					// Si el href coincide, agrega la clase "active" al botón
+					links[i].parentNode.classList.add("active");
+				}
+			}
+		</script>
+	</body>
 </html>

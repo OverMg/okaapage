@@ -1,9 +1,4 @@
 { 
-"base": {
-    "categoria": "Contexto",
-    "description":"Interactua con otro miembro.",
-    "id": "1089931393733251132"
-},
 "act": {
     "categoria": "Diversion",
     "subcommand":" kiss",
