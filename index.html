@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okaa Bot</title></head>
+    <title>Okaa Bot</title>
     <link rel="stylesheet" href="home/styles.css">
+</head>
+
 <body>
     <header>
         <h1>Bienvenido a Okaa</h1>
@@ -15,6 +17,7 @@
             <li><a href="comandos/comandos.html">Comandos</a></li>
             <li><a href="contacto/contacto.html">Contacto</a></li>
             <li><a href="terminos/terminos.html">Términos de servicio</a></li>
+            <li><a href="terminos/politicas.html">Politicas de privacidad</a> </li>
         </ul>
     </nav>
     <main>
@@ -24,5 +27,20 @@
     <footer>
         <p>Copyright © 2023 - Okaa</p>
     </footer>
+
+    <script>
+        // Obtiene la URL actual de la página
+        var currentURL = window.location.href;
+        // Obtén todos los elementos de enlace dentro del menú de navegación
+        var links = document.querySelectorAll("nav li a");
+        // Itera a través de los enlaces para verificar si su href coincide con la URL actual
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].href === currentURL) {
+                // Si el href coincide, agrega la clase "active" al botón
+                links[i].parentNode.classList.add("active");
+            }
+        }
+    </script>
+
 </body>
 </html>

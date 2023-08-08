@@ -11,7 +11,7 @@ header, nav, main, footer {
 }
 
 h1, h2, h3 {
-    color: #ffcc00; /* Títulos en amarillo */
+    color: #ff5900; /* Títulos en amarillo */
 }
 
 nav ul {
@@ -20,14 +20,24 @@ nav ul {
     margin: 0;
 }
 
+nav li:hover {
+    background-color: #555;
+}
+
 nav li {
     display: inline;
-    margin-right: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
 }
 
 nav a {
     color: #fff; /* Enlaces en blanco */
     text-decoration: none;
+}
+nav li.active {
+    background-color: #555; /* Color de fondo para el botón activo */
 }
 
 nav a:hover {

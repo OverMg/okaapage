@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Okaa - Términos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../home/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Términos y Condiciones</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../comandos/comandos.html">Comandos</a></li>
+				<li><a href="../contacto/contacto.html">Contacto</a></li>
+				<li><a href="../terminos/terminos.html">Términos de servicio</a></li>
+				<li>
+					<a href="../terminos/politicas.html">Politicas de privacidad</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<h2>Política de Privacidad de Okaa</h2>
+			<p>Fecha de última actualización: 7 de Agosto de 2023</p>
+			<p>
+				La privacidad de nuestros usuarios es de suma importancia para nosotros
+			</p>
+			<p>
+				Esta política de privacidad describe cómo Okaa recopila, utiliza y
+				protege la información personal que se obtiene de los usuarios del
+				servicio y los servidores de Discord.
+			</p>
+
+			<h4>Información que Recopilamos</h4>
+			<p>
+				Okaa puede recopilar ciertos datos y métricas relacionados con su uso,
+				incluyendo pero no limitado a:
+			</p>
+			<li>Comandos utilizados</li>
+			<li>Información de servidores de Discord</li>
+			<li>Datos de uso general</li>
+
+			<h4>Uso de la Información</h4>
+			<li>
+				La información recopilada se utilizará con fines estadísticos y de
+				mejora del servicio.
+			</li>
+			<li>No compartiremos ni venderemos esta información a terceros.</li>
+
+			<h4>Enlaces Externos</h4>
+			<li>Okaa puede contener enlaces a sitios web externos.</li>
+			<li>
+				No somos responsables de las prácticas de privacidad de esos sitios web.
+				Te recomendamos leer las políticas de privacidad de esos sitios antes de
+				proporcionar cualquier información personal.
+			</li>
+
+			<h4>Seguridad de la Información</h4>
+			<li>
+				Nos comprometemos a proteger la información personal de los usuarios y
+				tomaremos medidas razonables para garantizar su seguridad. Sin embargo,
+				ten en cuenta que ninguna transmisión de datos a través de Internet es
+				completamente segura y no podemos garantizar la seguridad absoluta de la
+				información transmitida a través del bot.
+			</li>
+
+			<h4>Modificaciones a la Política de Privacidad</h4>
+			<li>
+				Nos reservamos el derecho de realizar modificaciones o actualizaciones a
+				esta política de privacidad en cualquier momento y sin previo aviso. Te
+				recomendamos revisar periódicamente esta política para estar informado
+				sobre cualquier cambio.
+			</li>
+
+			<h4>Contacto</h4>
+			<li>
+				Esta política de privacidad se aplica únicamente a la información
+				recopilada por Okaa y no se aplica a ninguna otra información recopilada
+				por terceros o a través de otros sitios web o servicios vinculados a
+				Okaa
+			</li>
+			<li>
+				Si tienes alguna pregunta o inquietud sobre nuestra política de
+				privacidad, puedes ponerte en contacto con nosotros a través de nuestro
+				<a href="https://discord.gg/2ZKdT6SRsZ">servidor de Discord.</a>
+			</li>
+		</main>
+
+		<footer>
+			<p>Copyright © 2023 - Okaa</p>
+		</footer>
+
+		<script>
+			// Obtiene la URL actual de la página
+			var currentURL = window.location.href;
+			// Obtén todos los elementos de enlace dentro del menú de navegación
+			var links = document.querySelectorAll("nav li a");
+			// Itera a través de los enlaces para verificar si su href coincide con la URL actual
+			for (var i = 0; i < links.length; i++) {
+				if (currentURL.endsWith(links[i].href)) {
+					// Si el href coincide, agrega la clase "active" al botón
+					links[i].parentNode.classList.add("active");
+				}
+			}
+		</script>
+	</body>
+</html>

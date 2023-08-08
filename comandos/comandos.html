@@ -16,14 +16,52 @@
             <li><a href="../comandos/comandos.html">Comandos</a></li>
             <li><a href="../contacto/contacto.html">Contacto</a></li>
             <li><a href="../terminos/terminos.html">Términos de servicio</a></li>
+            <li><a href="../terminos/politicas.html">Politicas de privacidad</a> </li>
         </ul>
     </nav>
     <main>
-        <h2>Página de Comandos</h2>
-        <p>Aquí se mostrarán los comandos de Okaa.</p>
+        <h2>Lista de Comandos</h2>
+        <ul id="comandos-list">
+        <!-- Los comandos se agregarán aquí dinámicamente -->
+        <script>
+            // Cargar el archivo commands.json
+            fetch("commands.json")
+                .then(response => response.json())
+                .then(data => {
+                    const comandosListElement = document.getElementById("comandos-list");
+        
+                    // Iterar sobre los datos del archivo JSON
+                    for (const comando in data) {
+                        if (data.hasOwnProperty(comando)) {
+                            const commandData = data[comando];
+                            const listItem = document.createElement("li");
+                            listItem.textContent = `${comando} - ${commandData.description}`;
+                            comandosListElement.appendChild(listItem);
+                        }
+                    }
+                })
+                .catch(error => console.error("Error al cargar el archivo commands.json", error));
+        </script>
+        
+    </ul>
     </main>
     <footer>
         <p>Copyright © 2023 - Okaa</p>
     </footer>
+
+    <script>
+        // Obtiene la URL actual de la página
+        var currentURL = window.location.href;
+        // Obtén todos los elementos de enlace dentro del menú de navegación
+        var links = document.querySelectorAll("nav li a");
+        // Itera a través de los enlaces para verificar si su href coincide con la URL actual
+        for (var i = 0; i < links.length; i++) {
+            if (currentURL.endsWith(links[i].href)) {
+                // Si el href coincide, agrega la clase "active" al botón
+                links[i].parentNode.classList.add("active");
+            }
+        }
+    </script>
+    
 </body>
 </html>

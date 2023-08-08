@@ -1,0 +1,265 @@
+{ 
+"base": {
+    "categoria": "Contexto",
+    "description":"Interactua con otro miembro.",
+    "id": "1089931393733251132"
+},
+"act": {
+    "categoria": "Diversion",
+    "subcommand":" kiss",
+    "description":"Interactua con otro miembro.",
+    "id": "1109583267830698164"
+    },
+"megumin": {
+    "categoria": "Diversion",
+    "description":"Muestra la imagen de megumin",
+    "id": "1109583267830698165"
+},
+"neko":{
+    "categoria": "Diversion",
+    "description":"Muestra la imagen de una neko",
+    "id": "1109583267830698166"
+},
+"shinobu":{
+    "categoria": "Diversion",
+    "description":"Muestra la imagen de shinobu",
+    "id": "1109583267830698167"
+},
+"waifu":{
+    "categoria": "Diversion",
+    "description":"Muestra la imagen de una maifu",
+    "id": "1109583267830698168"
+},
+"remove-sv":{
+    "categoria": "Desarrollo",
+    "description":"Remover de algun server tu bot",
+    "id": "1109583267830698169"
+},
+"listservers":{
+    "categoria": "Desarrollo",
+    "description":"Muestra la lista de servidores con las Ids de los servidor en los que está tu bot (ONLI DEV).",
+    "id": "1109583267830698170"
+},
+"status":{
+    "categoria": "Desarrollo",
+    "description":"Responde con el estado del sistema.",
+    "id": "1109583267830698172"
+},
+"automod":{
+    "categoria": "Administracion",
+    "subcommand":" anti-links",
+    "description":"Lanza un sistema de AutoModeracion para evitar Spam, Links, Invitaciones, Menciones masivas.",
+    "id": "1109583268023648296"
+},
+"autorole":{
+    "categoria": "Administracion",
+    "subcommand":" setup",
+    "description":"Configura un sistema de roles automaticos",
+    "id": "1109583268023648297"
+},
+"ban":{
+    "categoria": "Moderacion",
+    "description":"Banea un miembro de este sevidor.",
+    "id": "1109583268023648298"
+},
+"bienvenidas":{
+    "categoria": "Desarrollo",
+    "subcommand":" setup",
+    "description":"Crea un mensaje de bienvenida - pruebas",
+    "id": "1109583268023648299"
+},
+"delete":{
+    "categoria": "Administracion",
+    "subcommand":" channel",
+    "description":"elimina uno o mas canales.",
+    "id": "1109583268023648300"
+},
+"clear":{
+    "categoria": "Moderacion",
+    "subcommand":" mensajes",
+    "description":"Borra un número especificado de mensajes.",
+    "id": "1109583268023648301"
+},
+"emoji-add":{
+    "categoria": "Administracion",
+    "description":" Roba emojis de otros servidores",
+    "id": "1109583268023648302"
+},
+"invitaciones":{
+    "categoria": "Administracion",
+    "description":"Obtiene un recuento de las invitaciones del servidor de un miembro.",
+    "id": "1109583268023648303"
+},
+"invites":{
+    "categoria": "Administracion",
+    "sub1":" setup",
+    "description":"Pon en un canal con logs de invitaciones, cuando entra un nuevo miembro muestra quien lo invito, el codigo de invitacion y cuantos usos tiene..",
+    "id": "1109583268023648304"
+},
+"kick":{
+    "categoria": "Moderacion",
+    "description":"Expulsa un miembro de este sevidor.",
+    "id": "1109583268023648305"
+},
+"mute":{
+    "categoria": "Moderacion",
+    "description":"Da rol mute a un miembro del servidor.",
+    "id": "1109583268216582235"
+},
+"role":{
+    "categoria": "Administracion",
+    "subcommand":" member",
+    "description":"Asigna o quita un rol a un mimebro, bot o todos los usuarios del servidor",
+    "id": "1109583268216582236"
+},
+"starboard":{
+    "categoria": "Administracion",
+    "subcommand":" setup",
+    "description":"Configura un sistema de mensajes destacados en el servidor.",
+    "id": "1109583268216582237"
+},
+"timeout":{
+    "categoria": "Moderacion",
+    "description":"Aisla un mimebro del servidor.",
+    "id": "1109583268216582238"
+},
+"unban":{
+    "categoria": "Administracion",
+    "subcommand":" usuario",
+    "subcommand2":"all",
+    "description":"Desbanea a un miembro o a todos los miembros baneados.",
+    "id": "1109583268216582239"
+},
+"welcome":{
+    "categoria": "Administracion",
+    "subcommand":" setup",
+    "description":"Lanza un sistema de bienvenidas con imagen, para pon la URL de la imagen que quieres de fondo o tendras una imagen por defecto.",
+    "id": "1109583268216582241"
+},
+"help":{
+    "categoria": "Utilidades",
+    "description":"Muestra todos mis comandos y su descripcion.",
+    "id": "1109583268216582242"
+},
+"jumbo":{
+    "categoria": "Utilidades",
+    "description":"Convierte un emoji en una imagen grande.",
+    "id": "1109583268216582243"
+},
+"nitro":{
+    "categoria": "Utilidades",
+    "description":"Genera un link de discord nitro al azar.",
+    "id": "1109583268426289343"
+},
+"play":{
+    "categoria": "Desarrollo",
+    "description":"Reproduce música (En desarrollo)",
+    "id": "1109583268426289344"
+},
+"random":{
+    "categoria": "Diversion",
+    "description":"imagen, gif o video random en español.",
+    "id": ""
+},
+"server":{
+    "categoria": "Utilidades",
+    "description":"Muestra informacion general del servidor",
+    "id": "1109583268426289345"
+},
+"stop":{
+    "categoria": "Desarrollo",
+    "description":"Detiene la reproducción de música (En desarollo)",
+    "id": "1109583268426289346"
+},
+"suplantar":{
+    "categoria": "Diversion",
+    "description":"Suplanta un miembro y envia un mensaje como si fuese el o ella",
+    "id": "1109583268426289347"
+},
+"tweet":{
+    "categoria": "Diversion",
+    "description":"Crea un tweet falso",
+    "id": "1109583268426289349"
+},
+"user":{
+    "categoria": "Utilidades",
+    "subcommand":" info",
+    "description":"Mira la informacion, banner o avatar de un miembro.",
+    "id": "1109583268426289350"
+},
+"wiki":{
+    "categoria": "Utilidades",
+    "description":"Haz una consulta a wikipedia",
+    "id": "1109583268426289351"
+},
+"tictactoe":{
+    "categoria": "Diversion",
+    "description":"Inicia una partida de el gato, TicTacToe o Tres en raya con un mimembro del servidor.",
+    "id":"1109583268426289348"
+},
+"servers":{
+    "categoria": "Desarrollo",
+    "description":"Muesta el nombre de los servidores mas grandes en los que esta el bot(ONLI DEV)",
+    "id":"1109583267830698171"
+},
+"logs":{
+    "categoria": "Administracion",
+    "subcommand":" setup",
+    "description":"Lanza un sistema de logs en este servidor",
+    "id":"1109583268216582234"
+},
+"hola":{
+    "categoria": "Desarrollo",
+    "description":"Responde con un boton que al pulsarlo saluda a todos",
+    "id":"1109587295847338154"
+},
+"flood":{
+    "categoria": "Diversion",
+    "description":"Inicia una partida del mini-juego Flood",
+    "id":"1112175782933053500"
+},
+"snake":{
+    "categoria": "Diversion",
+    "description":"Inicia una partida de snake",
+    "id":"1112175782933053501"
+},
+"warn":{
+    "categoria": "Moderacion",
+    "description":"Envia una advertencia a un miembro del servidor.",
+    "id":"1118028450205274212"
+},
+"warnings":{
+    "categoria": "Moderacion",
+    "description":"Revisa las advertencias de un miembro.",
+    "id":"1118025702114070639"
+},
+"clearwarn":{
+    "categoria": "Moderacion",
+    "description":"quita las advertencias de un miembro.",
+    "id":"1118025702114070638"
+},
+"badges":{
+    "categoria": "Utilidades",
+    "description":"Revisa cuantos miembros del servidor tienen una insignia de discord.",
+    "id":"1128799014163325089"
+},
+"bug-report":{
+    "categoria": "Contacto",
+    "description":"Haz un reporte sobre un bug en mi funcionamiento o mis comandos.",
+    "id":"1129428826661867564"
+},
+"invite-info":{
+    "categoria": "Utilidades",
+    "description":"Muestra toda la informacion de la invitacion de un servidor.",
+    "id":"1128670189261684798"
+},
+"embed":{
+    "categoria": "Administracion",
+    "description": "Crea un embed personaliado",
+    "id": "1089931393733251132"
+},
+"nsfw":{
+    "categoria": "Prefix",
+    "description": "Muestra contenido nsfw en un canal marcado con restriccion de edad"
+}
+}

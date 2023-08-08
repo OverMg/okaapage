@@ -16,6 +16,7 @@
             <li><a href="../comandos/comandos.html">Comandos</a></li>
             <li><a href="../contacto/contacto.html">Contacto</a></li>
             <li><a href="../terminos/terminos.html">Términos de servicio</a></li>
+            <li><a href="../terminos/politicas.html">Politicas de privacidad</a> </li>
         </ul>
     </nav>
     <main>
@@ -23,11 +24,26 @@
         <p>Puedes contactarme a través de:</p>
         <ul>
             <li>Discord: overmage</li>
-            <li>servidor: <a href="https://discord.gg/2ZKdT6SRsZ">Okaa Support</a></li>
+            <li>Servidor de soporte: <a href="https://discord.gg/2ZKdT6SRsZ">Okaa Support</a></li>
         </ul>
     </main>
     <footer>
         <p>Copyright © 2023 - Okaa</p>
     </footer>
+
+    <script>
+        // Obtiene la URL actual de la página
+        var currentURL = window.location.href;
+        // Obtén todos los elementos de enlace dentro del menú de navegación
+        var links = document.querySelectorAll("nav li a");
+        // Itera a través de los enlaces para verificar si su href coincide con la URL actual
+        for (var i = 0; i < links.length; i++) {
+            if (currentURL.endsWith(links[i].href)) {
+                // Si el href coincide, agrega la clase "active" al botón
+                links[i].parentNode.classList.add("active");
+            }
+        }
+    </script>
+    
 </body>
 </html>
