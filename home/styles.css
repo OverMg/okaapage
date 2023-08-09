@@ -11,7 +11,7 @@ header, nav, main, footer {
 }
 
 h1, h2, h3 {
-    color: #ff5900; /* Títulos en amarillo */
+    color: #ff5900; /* Títulos en naranjado */
 }
 
 nav ul {
@@ -78,9 +78,9 @@ main {
 /* Estilos para el botón de invitación */
 .invite-button {
     display: block; /* Hace que el botón ocupe todo el ancho disponible */
-    width: 20%; /* Ajusta el ancho del botón según tus preferencias */
+    width: auto; /* Ajusta el ancho del botón según tus preferencias */
     margin: 20px auto; /* Centra el botón horizontalmente */
-    padding: 1% 2%; /* Ajusta el espaciado interno del botón */
+    padding: 1.5% 2%; /* Ajusta el espaciado interno del botón */
     background-color: #ff5900; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     text-align: center; /* Centra el texto dentro del botón */
