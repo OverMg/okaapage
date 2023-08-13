@@ -71,7 +71,7 @@
     "subcommand7":" mention-spam",
     "subcommand8":" flagged-words",
     "description":"Muestra un listado con todas las reglas de automoderacion del servidor y su configuracion.",
-    "description2":"Elimina una regla de automoderacion del servidor utilizando el iD de la regla.",
+    "description2":"Elimina una regla de automoderacion del servidor utilizando el ID de la regla.",
     "description3":"Lanza un sistema anti links en el servidor el cual evita que cualquier miembro sin permisos pueda enviar links.",
     "description4":"Lanza un sistema que evita el spam en el servidor activando o desactivando la posibilidad de enviar el mismo la cantidad de veces que elijas.",
     "description5":"Lanza un sistema que envita que cualquier miembro envie invitaciones de otros servidores.",

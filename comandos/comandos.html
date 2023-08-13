@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>Okaa - Comandos</title>
+		<title>Okaa Comandos</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../home/styles.css" />
 	</head>
@@ -144,8 +144,6 @@
 			<p>Copyright © 2023 - Okaa</p>
 		</footer>
 
-		<!-- ... (código HTML) ... -->
-
 		<script>
 			const buttons = document.querySelectorAll(".Button-categories");
 			const contentContainers = document.querySelectorAll(".category-content");
@@ -173,6 +171,7 @@
 			});
 		</script>
 
+		<!-- Muestra la descipcion de cada comando y sus subcomandos si tiene -->
 		<script>
 			const commands = document.querySelectorAll(".cmds-li");
 			const cmdDetailsContainer = document.getElementById("cmd-details");
@@ -213,8 +212,12 @@
 
 			// Función para generar el HTML de los detalles del comando y subcomandos
 			function generateCommandDetails(commandName, commandData) {
-				let detailsHTML = `<h3>Detalles del comando :</h3>\n<h4>${commandName}</h4>`;
-				detailsHTML += `<p>${commandData.description}</p>`;
+				let detailsHTML = `<h3>Detalles del comando:</h3><h4>${commandName}</h4>`;
+
+				// Mostrar la descripción solo si el comando principal no tiene subcomandos
+				if (!hasSubcommands(commandData)) {
+					detailsHTML += `<p>${commandData.description}</p>`;
+				}
 
 				// Iterar a través de las propiedades del objeto commandData
 				for (const prop in commandData) {
@@ -222,12 +225,23 @@
 						const subcommandValue = commandData[prop];
 						const subcommandDescription =
 							commandData["description" + prop.replace("subcommand", "")];
-						detailsHTML += `<h3>${commandName} ${subcommandValue}:</h3>`;
+
+						detailsHTML += `<h4>${commandName} ${subcommandValue} :</h4>`;
 						detailsHTML += `<p>${subcommandDescription}</p>`;
 					}
 				}
 
 				return detailsHTML;
+			}
+
+			// Función para verificar si el comando tiene subcomandos
+			function hasSubcommands(commandData) {
+				for (const prop in commandData) {
+					if (prop.startsWith("subcommand")) {
+						return true;
+					}
+				}
+				return false;
 			}
 		</script>
 
