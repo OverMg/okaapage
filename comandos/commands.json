@@ -32,17 +32,17 @@
 },
 "neko":{
     "categoria": "Diversion",
-    "description":"Muestra la imagen de una neko",
+    "description":"Muestra la imagen de una chica neko",
     "id": "1109583267830698166"
 },
 "shinobu":{
     "categoria": "Diversion",
-    "description":"Muestra la imagen de shinobu",
+    "description":"Muestra una imagen de shinobu",
     "id": "1109583267830698167"
 },
 "waifu":{
     "categoria": "Diversion",
-    "description":"Muestra la imagen de una maifu",
+    "description":"Muestra la imagen de una chica waifu",
     "id": "1109583267830698168"
 },
 "remove-sv":{
@@ -57,7 +57,7 @@
 },
 "status":{
     "categoria": "Desarollo",
-    "description":"Responde con el estado del sistema.",
+    "description":"Muestra el estado actual del host.",
     "id": "1109583267830698172"
 },
 "automod":{
@@ -165,7 +165,7 @@
 },
 "timeout":{
     "categoria": "Moderacion",
-    "description":"Aisla un mimebro del servidor.",
+    "description":"Aisla un miembro del servidor.",
     "id": "1109583268216582238"
 },
 "unban":{
@@ -216,7 +216,7 @@
 },
 "stop":{
     "categoria": "Utilidades",
-    "description":"Detiene la reproducción de música (En desarollo)",
+    "description":"Detiene la reproducción de música.",
     "id": "1109583268426289346"
 },
 "suplantar":{
@@ -246,7 +246,7 @@
 },
 "tictactoe":{
     "categoria": "Diversion",
-    "description":"Inicia una partida de el gato, TicTacToe o Tres en raya con un mimembro del servidor.",
+    "description":"Inicia una partida del juego el gato, Tic Tac Toe o Tres en raya con un miembro del servidor.",
     "id":"1109583268426289348"
 },
 "logs":{
