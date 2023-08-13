@@ -1,58 +1,58 @@
 { 
-"act": {
-    "categoria": "Diversion",
-    "subcommand":" kiss",
-    "subcommand2":" kill",
-    "subcommand3":" cringe",
-    "subcommand4":" dance",
-    "subcommand5":" kick",
-    "subcommand6":" highfive",
-    "subcommand7":" sonrojarse",
-    "subcommand8":" bonk",
-    "subcommand9":" hug",
-    "subcommand10":" sad",
-    "subcommand11":" slap",
-    "description":"Dar un beso a otro miembro del servidor.",
-    "description2":"Asesxnar a otro miembro del servidor.",
-    "description3":"Envia un gif con cara de cinge.",
-    "description4":"Envia un gif bailando.",
-    "description5":"Patea a otro miembro.",
-    "description6":"Choca los cinco con otro miembro.",
-    "description7":"Envia un gif sonrojandose",
-    "description8":"Da un golpe a otro miembro",
-    "description9":"Da un abrazo a otro miembro",
-    "description10":"Envia un gif sad",
-    "description11":"Da un golpe a otro miembro",
-    "id": "1109583267830698164"
+    "act": {
+        "categoria": "Diversión",
+        "subcommand": " beso",
+        "subcommand2": " matar",
+        "subcommand3": " vergüenza",
+        "subcommand4": " bailar",
+        "subcommand5": " expulsar",
+        "subcommand6": " choca",
+        "subcommand7": " sonrojarse",
+        "subcommand8": " golpear",
+        "subcommand9": " abrazar",
+        "subcommand10": " triste",
+        "subcommand11": " golpear",
+        "description": "Dar un beso a otro miembro del servidor.",
+        "description2": "Asesinar a otro miembro del servidor.",
+        "description3": "Enviar un gif con cara de vergüenza.",
+        "description4": "Enviar un gif bailando.",
+        "description5": "Expulsar a otro miembro.",
+        "description6": "Chocar los cinco con otro miembro.",
+        "description7": "Enviar un gif sonrojándose.",
+        "description8": "Golpear a otro miembro.",
+        "description9": "Dar un abrazo a otro miembro.",
+        "description10": "Enviar un gif triste.",
+        "description11": "Golpear a otro miembro.",
+        "id": "1109583267830698164"
     },
 "megumin": {
     "categoria": "Diversion",
-    "description":"Muestra la imagen de megumin",
+    "description":"Muestra la imagen de Megumin.",
     "id": "1109583267830698165"
 },
 "neko":{
     "categoria": "Diversion",
-    "description":"Muestra la imagen de una chica neko",
+    "description":"Muestra la imagen de una chica neko.",
     "id": "1109583267830698166"
 },
 "shinobu":{
     "categoria": "Diversion",
-    "description":"Muestra una imagen de shinobu",
+    "description":"Muestra una imagen de shinobu.",
     "id": "1109583267830698167"
 },
 "waifu":{
     "categoria": "Diversion",
-    "description":"Muestra la imagen de una chica waifu",
+    "description":"Muestra la imagen de una chica waifu.",
     "id": "1109583267830698168"
 },
 "remove-sv":{
     "categoria": "Desarollo",
-    "description":"Remover de algun server tu bot",
+    "description":"Remover de algun server tu bot.",
     "id": "1109583267830698169"
 },
 "server-count":{
     "categoria": "Desarollo",
-    "description":"Muestra la lista de servidores con las Ids de los servidor en los que está tu bot (ONLI DEV).",
+    "description":"Muestra la lista de servidores con las Ids de los servidor en los que está tu bot.",
     "id": "1139016054992011274"
 },
 "status":{
@@ -77,15 +77,15 @@
     "description5":"Lanza un sistema que envita que cualquier miembro envie invitaciones de otros servidores.",
     "description6":"Bloquea una palabra especifica del servidor.",
     "description7":"Lanza un sistema que bloquea el spam de menciones en el servidor.",
-    "description8":"Activa un sistema que bloquea palabras bloqueadas por la iA de discord (contenido sexual, insultos y ofensas, lenguaje muy soez)",
+    "description8":"Activa un sistema que bloquea palabras bloqueadas por la iA de discord (contenido sexual, insultos y ofensas, lenguaje muy fuerte)",
     "id": "1109583268023648296"
 },
 "autorole":{
     "categoria": "Administracion",
     "subcommand":" setup",
     "subcommand2":" disable",
-    "description":"Configura un sistema de roles automaticos.",
-    "description2":"Quita el sistema de rol automatico.",
+    "description":"Configura un sistema de roles automáticos.",
+    "description2":"Desactiva el sistema de roles automáticos.",
     "id": "1109583268023648297"
 },
 "ban":{
@@ -97,15 +97,15 @@
     "categoria": "Desarollo",
     "subcommand":" setup",
     "subcommand2":" disable",
-    "description":"Crea un mensaje de bienvenida en embed",
-    "description2":"Elimina el mensaje de bienvenidas en embed del servidor",
+    "description":"Crea un mensaje de bienvenida en formato embed.",
+    "description2":"Elimina el mensaje de bienvenida en formato embed del servidor.",
     "id": "1109583268023648299"
 },
 "delete":{
     "categoria": "Administracion",
     "subcommand":" channel",
     "subcommand2":" all-channels",
-    "description":"Elimina un canal del servidor.",
+    "description":"Elimina un canal o una categoria del servidor.",
     "description2":"Elimina todos los canales del servidor (solo puede ser utilizado por el propietario del servidor)",
     "id": "1109583268023648300"
 },
@@ -114,12 +114,12 @@
     "subcommand":" mensajes",
     "subcommand2":" links",
     "description":"Borra un número especificado de mensajes.",
-    "description2":"Elimina todos los links enviados por los miembros en el canal",
+    "description2":"Elimina todos los enlaces enviados por los miembros en el canal.",
     "id": "1109583268023648301"
 },
 "emoji-add":{
     "categoria": "Administracion",
-    "description":" Agrega a este servidor cualquier emoji que puedas usar de otros servidores.",
+    "description":"Agrega a este servidor cualquier emoji que puedas usar de otros servidores.",
     "id": "1109583268023648302"
 },
 "invitaciones":{
@@ -131,8 +131,8 @@
     "categoria": "Administracion",
     "subcommand":" setup",
     "subcommand2":" disable",
-    "description":"Pon en un canal con logs de invitaciones, cuando entra un nuevo miembro muestra quien lo invito, el codigo de invitacion y cuantos usos tiene..",
-    "description2":"Quita el sistema de logs de invitaciones",
+    "description":"Configura un canal con registros de invitaciones. Al entrar un nuevo miembro, muestra quién lo invitó, el código de invitación y cuántos usos tiene.",
+    "description2":"Desactiva el sistema de registros de invitaciones.",
     "id": "1109583268023648304"
 },
 "kick":{
@@ -151,10 +151,10 @@
     "subcommand2":" humans",
     "subcommand3":" bots",
     "subcommand4":" member",
-    "description":"Agrega o quita un rol a todos los miembros del servidor",
-    "description2":"Agrega o quita un rol a todos los miembros humanos del servidor",
-    "description3":"Agrega o quita un rol a todos los bots del servidor",
-    "description4":"Agrega o quita un rol a un miembro del servidor",
+    "description":"Agrega o quita un rol a todos los miembros del servidor.",
+    "description2":"Agrega o quita un rol a todos los miembros humanos del servidor.",
+    "description3":"Agrega o quita un rol a todos los bots del servidor.",
+    "description4":"Agrega o quita un rol a un miembro del servidor.",
     "id": "1109583268216582236"
 },
 "starboard":{
@@ -180,13 +180,13 @@
     "categoria": "Administracion",
     "subcommand":" setup",
     "subcommand2":" disable",
-    "description":"Lanza un sistema de bienvenidas con imagen, para pon la URL de la imagen que quieres de fondo o tendras una imagen por defecto.",
+    "description":"Configura un sistema de bienvenida con imagen. Puedes agregar la imagen que deseas usar como fondo o usar una imagen predeterminada, se recomienda que la imagen de fondo tenga una relacion de aspecto de 16:9.",
     "description2":"Desactiva el sistema de bienvenidas del servidor.",
     "id": "1109583268216582241"
 },
 "help":{
     "categoria": "Utilidades",
-    "description":"Muestra todos mis comandos y su descripcion.",
+    "description":"Muestra todos mis comandos y sus descripciones.",
     "id": "1109583268216582242"
 },
 "jumbo":{
@@ -201,7 +201,7 @@
 },
 "play":{
     "categoria": "Utilidades",
-    "description":"Reproduce música (En Desarollo)",
+    "description":"Reproduce música en un canal de voz.",
     "id": "1109583268426289344"
 },
 "random":{
@@ -211,7 +211,7 @@
 },
 "server":{
     "categoria": "Utilidades",
-    "description":"Muestra informacion general del servidor",
+    "description":"Muestra información general del servidor.",
     "id": "1109583268426289345"
 },
 "stop":{
@@ -221,7 +221,7 @@
 },
 "suplantar":{
     "categoria": "Diversion",
-    "description":"Suplanta un miembro y envia un mensaje como si fuese el o ella",
+    "description":"Suplanta a un miembro y envía un mensaje como si fuera él o ella quien lo envia.",
     "id": "1109583268426289347"
 },
 "tweet":{
@@ -234,19 +234,19 @@
     "subcommand":" info",
     "subcommand2":" avatar",
     "subcommand3":" banner",
-    "description":"Muestra la informacion del perfil de un miembro del servidor.",
+    "description":"Muestra la información del perfil de un miembro del servidor.",
     "description2":"Muestra el avatar de un miembro.",
     "description3":"Muestra el baner de un miembro.",
     "id": "1109583268426289350"
 },
 "wiki":{
     "categoria": "Utilidades",
-    "description":"Haz una consulta a wikipedia.",
+    "description":"Realiza una consulta en Wikipedia.",
     "id": "1109583268426289351"
 },
 "tictactoe":{
     "categoria": "Diversion",
-    "description":"Inicia una partida del juego el gato, Tic Tac Toe o Tres en raya con un miembro del servidor.",
+    "description":"Inicia una partida del juego del gato, Tic Tac Toe o Tres en línea con un miembro del servidor.",
     "id":"1109583268426289348"
 },
 "logs":{
@@ -259,12 +259,12 @@
 },
 "hola":{
     "categoria": "Desarollo",
-    "description":"Responde con un boton que al pulsarlo saluda a todos",
+    "description":"Responde con un boton que al pulsarlo saluda a todos.",
     "id":"1109587295847338154"
 },
 "flood":{
     "categoria": "Diversion",
-    "description":"Inicia una partida del mini-juego Flood",
+    "description":"Inicia una partida del mini-juego Flood.",
     "id":"1112175782933053500"
 },
 "snake":{
@@ -279,22 +279,22 @@
 },
 "warnings":{
     "categoria": "Moderacion",
-    "description":"Revisa las advertencias de un miembro.",
+    "description":"Obten la cantidad de advertencias de un miembro.",
     "id":"1118025702114070639"
 },
 "clearwarn":{
     "categoria": "Moderacion",
-    "description":"quita las advertencias de un miembro.",
+    "description":"Elimina las advertencias de un miembro.",
     "id":"1118025702114070638"
 },
 "badges":{
     "categoria": "Utilidades",
-    "description":"Revisa cuantos miembros del servidor tienen una insignia de discord.",
+    "description":"Revisa cuántos miembros del servidor tienen una insignia de Discord.",
     "id":"1128799014163325089"
 },
 "bug-report":{
     "categoria": "Contacto",
-    "description":"Haz un reporte sobre un bug en mi funcionamiento o mis comandos.",
+    "description":"Realiza un reporte sobre un error en mi funcionamiento o mis comandos.",
     "id":"1129428826661867564"
 },
 "invite-info":{

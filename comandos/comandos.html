@@ -144,6 +144,35 @@
 			<p>Copyright © 2023 - Okaa</p>
 		</footer>
 
+		<!-- ... (código HTML) ... -->
+
+		<script>
+			const buttons = document.querySelectorAll(".Button-categories");
+			const contentContainers = document.querySelectorAll(".category-content");
+
+			buttons.forEach((button) => {
+				button.addEventListener("click", () => {
+					const categoryId = button.id.replace("btn-", "");
+
+					contentContainers.forEach((container) => {
+						container.style.display = "none";
+					});
+
+					const contentContainer = document.getElementById(
+						`content-${categoryId}`
+					);
+					if (contentContainer) {
+						contentContainer.style.display = "block";
+					}
+
+					// Remueve la clase "active-button" de todos los botones de categoría
+					buttons.forEach((btn) => btn.classList.remove("active-button"));
+					// Agrega la clase "active-button" al botón de categoría seleccionado
+					button.classList.add("active-button");
+				});
+			});
+		</script>
+
 		<script>
 			const commands = document.querySelectorAll(".cmds-li");
 			const cmdDetailsContainer = document.getElementById("cmd-details");
@@ -200,28 +229,6 @@
 
 				return detailsHTML;
 			}
-		</script>
-
-		<script>
-			const buttons = document.querySelectorAll(".Button-categories");
-			const contentContainers = document.querySelectorAll(".category-content");
-
-			buttons.forEach((button) => {
-				button.addEventListener("click", () => {
-					const categoryId = button.id.replace("btn-", "");
-
-					contentContainers.forEach((container) => {
-						container.style.display = "none";
-					});
-
-					const contentContainer = document.getElementById(
-						`content-${categoryId}`
-					);
-					if (contentContainer) {
-						contentContainer.style.display = "block";
-					}
-				});
-			});
 		</script>
 
 		<script>
