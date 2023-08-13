@@ -2,14 +2,27 @@
 "act": {
     "categoria": "Diversion",
     "subcommand":" kiss",
-    "subcommand2":" ",
-    "subcommand3":" ",
-    "subcommand4":" ",
-    "subcommand5":" ",
-    "subcommand6":" ",
-    "subcommand7":" ",
-    "subcommand8":" ",
-    "description":"Interactua con otro miembro.",
+    "subcommand2":" kill",
+    "subcommand3":" cringe",
+    "subcommand4":" dance",
+    "subcommand5":" kick",
+    "subcommand6":" highfive",
+    "subcommand7":" sonrojarse",
+    "subcommand8":" bonk",
+    "subcommand9":" hug",
+    "subcommand10":" sad",
+    "subcommand11":" slap",
+    "description":"Dar un beso a otro miembro del servidor.",
+    "description2":"Asesxnar a otro miembro del servidor.",
+    "description3":"Envia un gif con cara de cinge.",
+    "description4":"Envia un gif bailando.",
+    "description5":"Patea a otro miembro.",
+    "description6":"Choca los cinco con otro miembro.",
+    "description7":"Envia un gif sonrojandose",
+    "description8":"Da un golpe a otro miembro",
+    "description9":"Da un abrazo a otro miembro",
+    "description10":"Envia un gif sad",
+    "description11":"Da un golpe a otro miembro",
     "id": "1109583267830698164"
     },
 "megumin": {
@@ -85,13 +98,15 @@
     "subcommand":" setup",
     "subcommand2":" disable",
     "description":"Crea un mensaje de bienvenida en embed",
+    "description2":"Elimina el mensaje de bienvenidas en embed del servidor",
     "id": "1109583268023648299"
 },
 "delete":{
     "categoria": "Administracion",
     "subcommand":" channel",
-    "subcommand2":" adll-channels",
-    "description":"elimina uno o mas canales.",
+    "subcommand2":" all-channels",
+    "description":"Elimina un canal del servidor.",
+    "description2":"Elimina todos los canales del servidor (solo puede ser utilizado por el propietario del servidor)",
     "id": "1109583268023648300"
 },
 "clear":{
@@ -99,6 +114,7 @@
     "subcommand":" mensajes",
     "subcommand2":" links",
     "description":"Borra un número especificado de mensajes.",
+    "description2":"Elimina todos los links enviados por los miembros en el canal",
     "id": "1109583268023648301"
 },
 "emoji-add":{
@@ -116,6 +132,7 @@
     "subcommand":" setup",
     "subcommand2":" disable",
     "description":"Pon en un canal con logs de invitaciones, cuando entra un nuevo miembro muestra quien lo invito, el codigo de invitacion y cuantos usos tiene..",
+    "description2":"Quita el sistema de logs de invitaciones",
     "id": "1109583268023648304"
 },
 "kick":{
@@ -134,7 +151,10 @@
     "subcommand2":" humans",
     "subcommand3":" bots",
     "subcommand4":" member",
-    "description":"Asigna o quita un rol a un mimebro, bot o todos los usuarios del servidor",
+    "description":"Agrega o quita un rol a todos los miembros del servidor",
+    "description2":"Agrega o quita un rol a todos los miembros humanos del servidor",
+    "description3":"Agrega o quita un rol a todos los bots del servidor",
+    "description4":"Agrega o quita un rol a un miembro del servidor",
     "id": "1109583268216582236"
 },
 "starboard":{
@@ -152,7 +172,8 @@
     "categoria": "Administracion",
     "subcommand":" usuario",
     "subcommand2":"all",
-    "description":"Desbanea a un miembro o a todos los miembros baneados.",
+    "description":"Desbanea a un miembro baneado del servidor.",
+    "description2":"Desbanea a todos los miembros del servidor.",
     "id": "1109583268216582239"
 },
 "welcome":{
@@ -160,6 +181,7 @@
     "subcommand":" setup",
     "subcommand2":" disable",
     "description":"Lanza un sistema de bienvenidas con imagen, para pon la URL de la imagen que quieres de fondo o tendras una imagen por defecto.",
+    "description2":"Desactiva el sistema de bienvenidas del servidor.",
     "id": "1109583268216582241"
 },
 "help":{
@@ -212,12 +234,14 @@
     "subcommand":" info",
     "subcommand2":" avatar",
     "subcommand3":" banner",
-    "description":"Mira la informacion, banner o avatar de un miembro.",
+    "description":"Muestra la informacion del perfil de un miembro del servidor.",
+    "description2":"Muestra el avatar de un miembro.",
+    "description3":"Muestra el baner de un miembro.",
     "id": "1109583268426289350"
 },
 "wiki":{
     "categoria": "Utilidades",
-    "description":"Haz una consulta a wikipedia",
+    "description":"Haz una consulta a wikipedia.",
     "id": "1109583268426289351"
 },
 "tictactoe":{
@@ -229,7 +253,8 @@
     "categoria": "Administracion",
     "subcommand":" setup",
     "subcommand2":" disable",
-    "description":"Lanza un sistema de logs en este servidor",
+    "description":"Lanza un sistema de logs en este servidor.",
+    "description2":"Desactiva el sistema de logs de invitaciones.",
     "id":"1109583268216582234"
 },
 "hola":{
