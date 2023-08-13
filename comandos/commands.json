@@ -2,6 +2,13 @@
 "act": {
     "categoria": "Diversion",
     "subcommand":" kiss",
+    "subcommand2":" ",
+    "subcommand3":" ",
+    "subcommand4":" ",
+    "subcommand5":" ",
+    "subcommand6":" ",
+    "subcommand7":" ",
+    "subcommand8":" ",
     "description":"Interactua con otro miembro.",
     "id": "1109583267830698164"
     },
@@ -26,30 +33,46 @@
     "id": "1109583267830698168"
 },
 "remove-sv":{
-    "categoria": "Desarrollo",
+    "categoria": "Desarollo",
     "description":"Remover de algun server tu bot",
     "id": "1109583267830698169"
 },
-"listservers":{
-    "categoria": "Desarrollo",
+"server-count":{
+    "categoria": "Desarollo",
     "description":"Muestra la lista de servidores con las Ids de los servidor en los que está tu bot (ONLI DEV).",
-    "id": "1109583267830698170"
+    "id": "1139016054992011274"
 },
 "status":{
-    "categoria": "Desarrollo",
+    "categoria": "Desarollo",
     "description":"Responde con el estado del sistema.",
     "id": "1109583267830698172"
 },
 "automod":{
     "categoria": "Administracion",
-    "subcommand":" anti-links",
-    "description":"Lanza un sistema de AutoModeracion para evitar Spam, Links, Invitaciones, Menciones masivas.",
+    "subcommand":" lista",
+    "subcommand2":" eliminar",
+    "subcommand3":" anti-links",
+    "subcommand4":" spam-messages",
+    "subcommand5":" anti-invites",
+    "subcommand6":" keyword",
+    "subcommand7":" mention-spam",
+    "subcommand8":" flagged-words",
+    "description":"Muestra un listado con todas las reglas de automoderacion del servidor y su configuracion.",
+    "description2":"Elimina una regla de automoderacion del servidor utilizando el iD de la regla.",
+    "description3":"Lanza un sistema anti links en el servidor el cual evita que cualquier miembro sin permisos pueda enviar links.",
+    "description4":"Lanza un sistema que evita el spam en el servidor activando o desactivando la posibilidad de enviar el mismo la cantidad de veces que elijas.",
+    "description5":"Lanza un sistema que envita que cualquier miembro envie invitaciones de otros servidores.",
+    "description6":"Bloquea una palabra especifica del servidor.",
+    "description7":"Lanza un sistema que bloquea el spam de menciones en el servidor.",
+    "description8":"Activa un sistema que bloquea palabras bloqueadas por la iA de discord (contenido sexual, insultos y ofensas, lenguaje muy soez)",
     "id": "1109583268023648296"
 },
 "autorole":{
     "categoria": "Administracion",
     "subcommand":" setup",
-    "description":"Configura un sistema de roles automaticos",
+    "subcommand2":" disable",
+    "description":"Configura un sistema de roles automaticos.",
+    "description2":"Quita el sistema de rol automatico.",
     "id": "1109583268023648297"
 },
 "ban":{
@@ -58,26 +81,29 @@
     "id": "1109583268023648298"
 },
 "bienvenidas":{
-    "categoria": "Desarrollo",
+    "categoria": "Desarollo",
     "subcommand":" setup",
-    "description":"Crea un mensaje de bienvenida - pruebas",
+    "subcommand2":" disable",
+    "description":"Crea un mensaje de bienvenida en embed",
     "id": "1109583268023648299"
 },
 "delete":{
     "categoria": "Administracion",
     "subcommand":" channel",
+    "subcommand2":" adll-channels",
     "description":"elimina uno o mas canales.",
     "id": "1109583268023648300"
 },
 "clear":{
     "categoria": "Moderacion",
     "subcommand":" mensajes",
+    "subcommand2":" links",
     "description":"Borra un número especificado de mensajes.",
     "id": "1109583268023648301"
 },
 "emoji-add":{
     "categoria": "Administracion",
-    "description":" Roba emojis de otros servidores",
+    "description":" Agrega a este servidor cualquier emoji que puedas usar de otros servidores.",
     "id": "1109583268023648302"
 },
 "invitaciones":{
@@ -87,7 +113,8 @@
 },
 "invites":{
     "categoria": "Administracion",
-    "sub1":" setup",
+    "subcommand":" setup",
+    "subcommand2":" disable",
     "description":"Pon en un canal con logs de invitaciones, cuando entra un nuevo miembro muestra quien lo invito, el codigo de invitacion y cuantos usos tiene..",
     "id": "1109583268023648304"
 },
@@ -103,7 +130,10 @@
 },
 "role":{
     "categoria": "Administracion",
-    "subcommand":" member",
+    "subcommand":" all",
+    "subcommand2":" humans",
+    "subcommand3":" bots",
+    "subcommand4":" member",
     "description":"Asigna o quita un rol a un mimebro, bot o todos los usuarios del servidor",
     "id": "1109583268216582236"
 },
@@ -128,6 +158,7 @@
 "welcome":{
     "categoria": "Administracion",
     "subcommand":" setup",
+    "subcommand2":" disable",
     "description":"Lanza un sistema de bienvenidas con imagen, para pon la URL de la imagen que quieres de fondo o tendras una imagen por defecto.",
     "id": "1109583268216582241"
 },
@@ -147,8 +178,8 @@
     "id": "1109583268426289343"
 },
 "play":{
-    "categoria": "Desarrollo",
-    "description":"Reproduce música (En desarrollo)",
+    "categoria": "Utilidades",
+    "description":"Reproduce música (En Desarollo)",
     "id": "1109583268426289344"
 },
 "random":{
@@ -162,7 +193,7 @@
     "id": "1109583268426289345"
 },
 "stop":{
-    "categoria": "Desarrollo",
+    "categoria": "Utilidades",
     "description":"Detiene la reproducción de música (En desarollo)",
     "id": "1109583268426289346"
 },
@@ -179,6 +210,8 @@
 "user":{
     "categoria": "Utilidades",
     "subcommand":" info",
+    "subcommand2":" avatar",
+    "subcommand3":" banner",
     "description":"Mira la informacion, banner o avatar de un miembro.",
     "id": "1109583268426289350"
 },
@@ -192,19 +225,15 @@
     "description":"Inicia una partida de el gato, TicTacToe o Tres en raya con un mimembro del servidor.",
     "id":"1109583268426289348"
 },
-"servers":{
-    "categoria": "Desarrollo",
-    "description":"Muesta el nombre de los servidores mas grandes en los que esta el bot(ONLI DEV)",
-    "id":"1109583267830698171"
-},
 "logs":{
     "categoria": "Administracion",
     "subcommand":" setup",
+    "subcommand2":" disable",
     "description":"Lanza un sistema de logs en este servidor",
     "id":"1109583268216582234"
 },
 "hola":{
-    "categoria": "Desarrollo",
+    "categoria": "Desarollo",
     "description":"Responde con un boton que al pulsarlo saluda a todos",
     "id":"1109587295847338154"
 },

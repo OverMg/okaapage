@@ -1,67 +1,241 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Okaa - Comandos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Comandos</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../comandos/comandos.html">Comandos</a></li>
-            <li><a href="../contacto/contacto.html">Contacto</a></li>
-            <li><a href="../terminos/terminos.html">ToS</a></li>
-            <li><a href="../terminos/politicas.html">Politicas de privacidad</a> </li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Lista de Comandos</h2>
-        <ul id="comandos-list">
-        <!-- Los comandos se agregarán aquí dinámicamente -->
-        <script>
-            // Cargar el archivo commands.json
-            fetch("commands.json")
-                .then(response => response.json())
-                .then(data => {
-                    const comandosListElement = document.getElementById("comandos-list");
-        
-                    // Iterar sobre los datos del archivo JSON
-                    for (const comando in data) {
-                        if (data.hasOwnProperty(comando)) {
-                            const commandData = data[comando];
-                            const listItem = document.createElement("li");
-                            listItem.textContent = `${comando} - ${commandData.description}`;
-                            comandosListElement.appendChild(listItem);
-                        }
-                    }
-                })
-                .catch(error => console.error("Error al cargar el archivo commands.json", error));
-        </script>
-        
-    </ul>
-    </main>
-    <footer>
-        <p>Copyright © 2023 - Okaa</p>
-    </footer>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Okaa - Comandos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../home/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Comandos</h1>
+		</header>
 
-    <script>
-        // Obtiene la URL actual de la página
-        var currentURL = window.location.href;
-        // Obtén todos los elementos de enlace dentro del menú de navegación
-        var links = document.querySelectorAll("nav li a");
-        // Itera a través de los enlaces para verificar si su href coincide con la URL actual
-        for (var i = 0; i < links.length; i++) {
-            if (currentURL.endsWith(links[i].href)) {
-                // Si el href coincide, agrega la clase "active" al botón
-                links[i].parentNode.classList.add("active");
-            }
-        }
-    </script>
-    
-</body>
+		<!-- Menu de navegacion -->
+		<nav>
+			<ul>
+				<li><a href="../">Inicio</a></li>
+				<li><a href="../comandos/comandos.html">Comandos</a></li>
+				<li><a href="../contacto/contacto.html">Contacto</a></li>
+				<li><a href="../terminos/terminos.html">ToS</a></li>
+				<li>
+					<a href="../terminos/politicas.html">Politicas de privacidad</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Menu de categorias -->
+		<main>
+			<ul>
+				<h2>Categorias</h2>
+				<p>Selecciona una categoria para ver la lista de comandos de esta:</p>
+				<a id="btn-admin" class="Button-categories">Administración</a>
+				<a id="btn-mod" class="Button-categories">Moderacion</a>
+				<a id="btn-util" class="Button-categories">Utilidades</a>
+				<a id="btn-diver" class="Button-categories">Diversion</a>
+				<a id="btn-prefix" class="Button-categories">Prefix</a>
+				<a id="btn-context" class="Button-categories">Contexto</a>
+				<a id="btn-dev" class="Button-categories">Desarrollo</a>
+				<a id="btn-contact" class="Button-categories">Contacto</a>
+			</ul>
+
+			<!-- Categoria administracion -->
+			<div id="content-admin" class="category-content">
+				<ul>
+					<li class="cmds-li">automod</li>
+					<li class="cmds-li">autorole</li>
+					<li class="cmds-li">delete</li>
+					<li class="cmds-li">emoji-add</li>
+					<li class="cmds-li">invites</li>
+					<li class="cmds-li">logs</li>
+					<li class="cmds-li">role</li>
+					<li class="cmds-li">unban</li>
+					<li class="cmds-li">welcome</li>
+				</ul>
+			</div>
+
+			<!-- Categoria Moderacion -->
+			<div id="content-mod" class="category-content">
+				<ul>
+					<li class="cmds-li">ban</li>
+					<li class="cmds-li">clear</li>
+					<li class="cmds-li">clearwarn</li>
+					<li class="cmds-li">kick</li>
+					<li class="cmds-li">mute</li>
+					<li class="cmds-li">timeout</li>
+					<li class="cmds-li">warn</li>
+					<li class="cmds-li">warnings</li>
+				</ul>
+			</div>
+
+			<!-- Categoria utilidades -->
+			<div id="content-util" class="category-content">
+				<ul>
+					<li class="cmds-li">invite-info</li>
+					<li class="cmds-li">badges</li>
+					<li class="cmds-li">help</li>
+					<li class="cmds-li">jumbo</li>
+					<li class="cmds-li">nitro</li>
+					<li class="cmds-li">server</li>
+					<li class="cmds-li">user</li>
+					<li class="cmds-li">wiki</li>
+					<li class="cmds-li">play</li>
+					<li class="cmds-li">stop</li>
+				</ul>
+			</div>
+
+			<!-- Categoria diversion -->
+			<div id="content-diver" class="category-content">
+				<ul>
+					<li class="cmds-li">act</li>
+					<li class="cmds-li">mengumin</li>
+					<li class="cmds-li">neko</li>
+					<li class="cmds-li">shinobu</li>
+					<li class="cmds-li">waifu</li>
+					<li class="cmds-li">flood</li>
+					<li class="cmds-li">snake</li>
+					<li class="cmds-li">suplantar</li>
+					<li class="cmds-li">tictactoe</li>
+					<li class="cmds-li">tweet</li>
+				</ul>
+			</div>
+
+			<!-- Categoria prefix -->
+			<div id="content-prefix" class="category-content">
+				<ul>
+					<li class="cmds-li">!help</li>
+					<li class="cmds-li">!waifu</li>
+					<li class="cmds-li">!shinobu</li>
+					<li class="cmds-li">!neko</li>
+					<li class="cmds-li">!mengumin</li>
+					<li class="cmds-li">!server</li>
+					<li class="cmds-li">!stop</li>
+				</ul>
+			</div>
+
+			<!-- Categoria contexto -->
+			<div id="content-context" class="category-content">
+				<ul>
+					<li class="cmds-li">No disponibles por el momento.</li>
+				</ul>
+			</div>
+
+			<!-- Categoria Desarollo -->
+			<div id="content-dev" class="category-content">
+				<ul>
+					<li class="cmds-li">bienvenidas</li>
+					<li class="cmds-li">status</li>
+				</ul>
+			</div>
+
+			<!-- Categoria Contacto -->
+			<div id="content-contact" class="category-content">
+				<ul>
+					<li class="cmds-li">bug-report</li>
+				</ul>
+			</div>
+
+			<!-- Descripcion de los comandos -->
+			<div id="cmd-details" class="cmd-details">
+				<p>Detalles del comando seleccionado aparecerán aquí.</p>
+			</div>
+		</main>
+		<footer>
+			<p>Copyright © 2023 - Okaa</p>
+		</footer>
+
+		<script>
+			const commands = document.querySelectorAll(".cmds-li");
+			const cmdDetailsContainer = document.getElementById("cmd-details");
+
+			// Cargar el archivo commands.json
+			fetch("commands.json")
+				.then((response) => response.json())
+				.then((data) => {
+					commands.forEach((command) => {
+						command.addEventListener("click", () => {
+							// Remueve la clase "active" de todos los comandos
+							commands.forEach((cmd) => cmd.classList.remove("active"));
+							// Agrega la clase "active" al comando seleccionado
+							command.classList.add("active");
+
+							// Obtén el nombre del comando seleccionado
+							const commandName = command.textContent.trim();
+							// Obtén los detalles del comando y sus subcomandos desde el archivo JSON
+							const commandData = data[commandName];
+
+							// Genera el HTML para los detalles del comando y subcomandos
+							const commandDetails = generateCommandDetails(
+								commandName,
+								commandData
+							);
+
+							// Muestra los detalles del comando en el contenedor
+							cmdDetailsContainer.innerHTML = commandDetails;
+
+							// Muestra el contenedor de detalles
+							cmdDetailsContainer.style.display = "block";
+						});
+					});
+				})
+				.catch((error) =>
+					console.error("Error al cargar el archivo JSON", error)
+				);
+
+			// Función para generar el HTML de los detalles del comando y subcomandos
+			function generateCommandDetails(commandName, commandData) {
+				let detailsHTML = `<h3>Detalles del comando :</h3>\n<h4>${commandName}</h4>`;
+				detailsHTML += `<p>${commandData.description}</p>`;
+
+				// Iterar a través de las propiedades del objeto commandData
+				for (const prop in commandData) {
+					if (prop.startsWith("subcommand")) {
+						const subcommandValue = commandData[prop];
+						const subcommandDescription =
+							commandData["description" + prop.replace("subcommand", "")];
+						detailsHTML += `<h3>${commandName} ${subcommandValue}:</h3>`;
+						detailsHTML += `<p>${subcommandDescription}</p>`;
+					}
+				}
+
+				return detailsHTML;
+			}
+		</script>
+
+		<script>
+			const buttons = document.querySelectorAll(".Button-categories");
+			const contentContainers = document.querySelectorAll(".category-content");
+
+			buttons.forEach((button) => {
+				button.addEventListener("click", () => {
+					const categoryId = button.id.replace("btn-", "");
+
+					contentContainers.forEach((container) => {
+						container.style.display = "none";
+					});
+
+					const contentContainer = document.getElementById(
+						`content-${categoryId}`
+					);
+					if (contentContainer) {
+						contentContainer.style.display = "block";
+					}
+				});
+			});
+		</script>
+
+		<script>
+			// Obtiene la URL actual de la página
+			var currentURL = window.location.href;
+			// Obtén todos los elementos de enlace dentro del menú de navegación
+			var links = document.querySelectorAll("nav li a");
+			// Itera a través de los enlaces para verificar si su href coincide con la URL actual
+			for (var i = 0; i < links.length; i++) {
+				if (currentURL.endsWith(links[i].href)) {
+					// Si el href coincide, agrega la clase "active" al botón
+					links[i].parentNode.classList.add("active");
+				}
+			}
+		</script>
+	</body>
 </html>
