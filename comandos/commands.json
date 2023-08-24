@@ -94,11 +94,13 @@
     "id": "1109583268023648298"
 },
 "bienvenidas":{
-    "categoria": "Desarollo",
+    "categoria": "Administracion",
     "subcommand":" setup",
-    "subcommand2":" disable",
+    "subcommand2":" eliminar",
+    "subcommand3":" test",
     "description":"Crea un mensaje de bienvenida en formato embed.",
     "description2":"Elimina el mensaje de bienvenida en formato embed del servidor.",
+    "description3":"Envia una prueba del mensaje de bienvenidas tipo embed.",
     "id": "1109583268023648299"
 },
 "delete":{
