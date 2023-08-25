@@ -167,7 +167,15 @@
 "starboard":{
     "categoria": "Administracion",
     "subcommand":" setup",
+    "subcommand2":" disable",
+    "subcommand3":" block-message",
+    "subcommand4":" block-user",
+    "subcommand5":" unblock-user",
     "description":"Configura un sistema de mensajes destacados en el servidor.",
+    "description2":"Desactiva el sistema de mensajes destacados del servidor.",
+    "description3":"Bloquea un mensaje para que nunca se envie al canal starboard del servidor.",
+    "description4":"Bloquea a un miembro para que sus mensajes nunca se envien al canal starboard del servidor.",
+    "description5":"Desbloquea a un miembro del sistema starboard.",
     "id": "1109583268216582237"
 },
 "timeout":{
