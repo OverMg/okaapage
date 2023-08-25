@@ -159,6 +159,11 @@
     "description4":"Agrega o quita un rol a un miembro del servidor.",
     "id": "1109583268216582236"
 },
+"role-info":{
+    "categoria": "Utilidades",
+    "description":"Muestra toda la informacion de un rol del servidor.",
+    "id": "1135778297058435102"
+},
 "starboard":{
     "categoria": "Administracion",
     "subcommand":" setup",
