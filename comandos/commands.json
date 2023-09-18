@@ -33,7 +33,7 @@
 "neko":{
     "categoria": "Diversion",
     "description":"Muestra la imagen de una chica neko.",
-    "id": "1109583267830698166"
+    "id": "1153423249259122868"
 },
 "shinobu":{
     "categoria": "Diversion",
@@ -44,6 +44,11 @@
     "categoria": "Diversion",
     "description":"Muestra la imagen de una chica waifu.",
     "id": "1109583267830698168"
+},
+"cmd-list": {
+    "categoria": "Desarollo",
+    "description":"Listado completo de comandos /.",
+    "id": "1153423249259122869"
 },
 "remove-sv":{
     "categoria": "Desarollo",
@@ -71,7 +76,7 @@
     "subcommand7":" mention-spam",
     "subcommand8":" flagged-words",
     "description":"Muestra un listado con todas las reglas de automoderacion del servidor y su configuracion.",
-    "description2":"Elimina una regla de automoderacion del servidor utilizando el ID de la regla.",
+    "description2":"Elimina una regla de automoderacion del servidor utilizando el iD de la regla.",
     "description3":"Lanza un sistema anti links en el servidor el cual evita que cualquier miembro sin permisos pueda enviar links.",
     "description4":"Lanza un sistema que evita el spam en el servidor activando o desactivando la posibilidad de enviar el mismo la cantidad de veces que elijas.",
     "description5":"Lanza un sistema que envita que cualquier miembro envie invitaciones de otros servidores.",
@@ -184,11 +189,11 @@
     "id": "1109583268216582238"
 },
 "unban":{
-    "categoria": "Administracion",
-    "subcommand":" usuario",
-    "subcommand2":"all",
-    "description":"Desbanea a un miembro baneado del servidor.",
-    "description2":"Desbanea a todos los miembros del servidor.",
+    "categoria": "Moderacion",
+    "subcommand":" todos",
+    "subcommand2":" usuario",
+    "description":"Desbanea a todos los miembros del servidor.",
+    "description2":"Desbanea a un miembro baneado del servidor.",
     "id": "1109583268216582239"
 },
 "welcome":{
@@ -212,7 +217,7 @@
 "nitro":{
     "categoria": "Utilidades",
     "description":"Genera un link de discord nitro al azar.",
-    "id": "1109583268426289343"
+    "id": "1153423249259122877"
 },
 "play":{
     "categoria": "Utilidades",
@@ -220,9 +225,12 @@
     "id": "1109583268426289344"
 },
 "random":{
-    "categoria": "Diversion",
-    "description":"imagen, gif o video random en español.",
-    "id": ""
+    "categoria": "Utilidades",
+    "subcommand": " frase",
+    "subcommand2": " color",
+    "description":"Envia una frase random.",
+    "description2": "Genera un color random en formatos RGB, HEX, HSL, HSV",
+    "id": "1150121570828812348"
 },
 "server":{
     "categoria": "Utilidades",
@@ -275,7 +283,7 @@
 "hola":{
     "categoria": "Desarollo",
     "description":"Responde con un boton que al pulsarlo saluda a todos.",
-    "id":"1109587295847338154"
+    "id":"1153423249259122871"
 },
 "flood":{
     "categoria": "Diversion",
@@ -319,11 +327,63 @@
 },
 "embed":{
     "categoria": "Administracion",
-    "description": "Crea un embed personaliado",
-    "id": "1089931393733251132"
+    "description": "Crea un embed personaliado.",
+    "id": "1153423249259122870"
 },
 "nsfw":{
     "categoria": "Prefix",
-    "description": "Muestra contenido nsfw en un canal marcado con restriccion de edad"
+    "description": "Muestra contenido nsfw en un canal marcado con restriccion de edad."
+},
+"anime":{
+    "categoria": "Utilidades",
+    "description": "Busca informacion de un anime con su nombre.",
+    "id": "1146976184022876240"
+},
+"anti-bots": {
+    "categoria": "AntiRaid",
+    "subcommand": " setup",
+    "subcommand2": " whitelist-agregar",
+    "subcommand3": " whitelist-remover",
+    "subcommand4": " desactivar",
+    "description": "Lanza un sistema que evita que cualquier miembro pueda agregar bots",
+    "description2": "Agrega un miembro a una lista de miembros que no seran afectados por este sistema",
+    "description3": "Elimina un miembro de la lista de miembros que no son afectados por este sistema",
+    "description4": "Desactiva el sistema Anti Bots de este servidor.",
+    "id": "1151214477535105064"
+},
+"setverify": {
+    "categoria": "AntiRaid",
+    "subcommand": " setup",
+    "subcommand2": " disable",
+    "description": "Configura un sistema de verificacion por captcha.",
+    "description2": "Desactiva el sistema de verificacion por captcha.",
+    "id": "1153132622730502194"
+},
+"imagen": {
+    "categoria": "Prefix",
+    "description": "Busca cualquier imagen en internet."
+},
+"ping": {
+    "categoria": "Prefix",
+    "description": "Muestra mi latencia en ms."
+},
+"reload": {
+    "categoria": "Desarollo",
+    "subcommand": " commands",
+    "subcommand2": " events",
+    "description": "Recarga mis comandos.",
+    "description2": "Recarga mis eventos.",
+    "id": "1150799061151125514"
+},
+"vip-auto": {
+    "categoria": "Desarollo",
+    "description": "Envia 30 imagenes en el canal seleccionado durante 30 horas cada hora.",
+    "id": "1153423249259122874"
+},
+"panel": {
+    "categoria": "Administracion",
+    "description": "Muestra mis sistemas configurables activos e inactivos en este servidor.",
+    "id": "1153132622730502195"
+
 }
 }
