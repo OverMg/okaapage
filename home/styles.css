@@ -2,7 +2,7 @@ body {
     background-color: #18181b; /* Fondo oscuro */
     color: #fff; /* Texto blanco */
     font-family: Arial, sans-serif;
-    margin: 0 15%; /* Márgenes laterales */
+    margin: 0% 15%; /* Márgenes laterales */
     padding: 0;
 }
 
@@ -16,8 +16,8 @@ h1, h2, h3 {
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
 }
 
 /* CSS */
@@ -26,7 +26,7 @@ nav li {
     background-color: #18181b;
     border: 1px solid transparent;
     border-radius: .75rem;
-    box-sizing: border-box;
+    box-sizing: content-box;
     color: #FFFFFF;
     cursor: pointer;
     flex: 0 0 auto;
@@ -44,7 +44,6 @@ nav li {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: auto;
 }
 
 nav li:hover {
@@ -101,37 +100,52 @@ main {
     font-style: italic;
 }
 
+.buttons-inicio {
+    display: grid;
+    margin-top: 5%;
+}
+
 /* Estilos para el botón de invitación */
-
 .invite-button {
-    background: linear-gradient(to bottom right, #ff4500, #ff8f4a);
-    border: 0;
-    border-radius: 12px;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    margin: 3%;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    padding: .5%;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
+  display: grid;
+  align-items: center;
+  margin: 2%;
+  appearance: none;
+  background-color: #fdfcfc;
+  border-radius: 15px;
+  border-width: 10%;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: content-box;
+  color: #36395A;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  font-size: 18px;
 }
 
-.invite-button:not([disabled]):focus {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+.invite-button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.invite-button:not([disabled]):hover {
-    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+.invite-button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.invite-button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 
 /* Botones categorias */
