@@ -274,3 +274,10 @@ main {
 .cmds-li.active:focus + .cmd-details {
     display: block; /* Muestra los detalles cuando el comando activo está enfocado */
 }
+
+.dep-content {
+    display: inline-flex;
+    justify-content: flex-start;
+    margin-inline: 3%;
+    
+}
