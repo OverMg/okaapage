@@ -1,5 +1,6 @@
 body {
     background-color: #18181b; /* Fondo oscuro */
+    background-image: url('./topography.svg');
     color: #fff; /* Texto blanco */
     font-family: Arial, sans-serif;
     margin: 0% 15%; /* Márgenes laterales */
@@ -20,7 +21,6 @@ nav ul {
     margin: 0%;
 }
 
-/* CSS */
 nav li {
     display: inline-block;
     background-color: #18181b;
@@ -79,7 +79,7 @@ main {
 
 .terms {
     background-color: #555; /* Fondo para cada sección de términos */
-    color: #fff; /* Texto blanco */
+    color: #fff;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -171,6 +171,21 @@ main {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (min-width: 768px) {
+    .buttons-inicio {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  /* Estilos para teléfonos y pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .buttons-inicio {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 .category-content {
     display: none;
