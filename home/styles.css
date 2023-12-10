@@ -107,7 +107,7 @@ main {
 
 /* Estilos para el botón de invitación */
 .invite-button {
-  display: grid;
+  display: block;
   align-items: center;
   margin: 2%;
   appearance: none;
@@ -170,6 +170,12 @@ main {
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .buttons-inicio {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 768px) {
