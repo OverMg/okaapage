@@ -107,7 +107,7 @@ main {
 
 /* Estilos para el botón de invitación */
 .invite-button {
-  display: block;
+  display: flex;
   align-items: center;
   margin: 2%;
   appearance: none;
