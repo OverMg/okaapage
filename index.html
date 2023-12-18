@@ -37,33 +37,56 @@
 				</p>
 
 			</div>
-			<div class="buttons-inicio">
-				<a
-					href="https://discord.com/api/oauth2/authorize?client_id=1089931393733251132&permissions=3276799&scope=applications.commands%20bot"
-					class="invite-button"
-					>Invitame a tu servidor</a
-				>
-				<a href="https://discord.gg/2ZKdT6SRsZ" class="invite-button"
-					>Servidor de Soporte</a
-				>
-				<a href="https://docs.okaa.lat/" class="invite-button"
-					>Okaa Wiki</a
-				>
-			</div>
+			<section class="buttons-inicio">
+				<div class="cards-buttons" >
+					<div class="content-cards">
+						<p>
+							¿Quieres utilizar alguno de mis sistemas en tu comunidad?
+						</p>
+						<a href="https://discord.com/api/oauth2/authorize?client_id=1089931393733251132&permissions=3276799&scope=applications.commands%20bot"
+						class="invite-button">
+						Invitame
+						</a>
+					</div>
+				</div>
+				
+				<div class="cards-buttons" >
+					<div class="content-cards">
+						<p>
+							¿Necesitas algun tipo de ayuda o contactar con mi desarrollador?
+						</p>
+						<a href="https://discord.gg/2ZKdT6SRsZ" class="invite-button">
+						Soporte
+						</a>
+					</div>
+				</div>
+				
+				<div class="cards-buttons" >
+					<div class="content-cards">
+						<p>
+							¿Quieres mas informacion sobre el uso de mis comandos o funciones?, en mi wiki puedes encontrar informacion detallada sobre mis comandos.
+						</p>
+	
+						<a href="https://discord.gg/2ZKdT6SRsZ" class="invite-button">
+							Okaa wiki
+						</a>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
 			<p>Copyright © 2023 - Okaa</p>
 		</footer>
 
 		<script>
-			// Obtiene la URL actual de la página
+			
 			var currentURL = window.location.href;
-			// Obtén todos los elementos de enlace dentro del menú de navegación
+			
 			var links = document.querySelectorAll("nav li a");
-			// Itera a través de los enlaces para verificar si su href coincide con la URL actual
+			
 			for (var i = 0; i < links.length; i++) {
 				if (links[i].href === currentURL) {
-					// Si el href coincide, agrega la clase "active" al botón
+					
 					links[i].parentNode.classList.add("active");
 				}
 			}
